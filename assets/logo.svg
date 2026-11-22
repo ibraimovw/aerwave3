@@ -1,1 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff4566"/><stop offset=".52" stop-color="#a36cff"/><stop offset="1" stop-color="#49baff"/></linearGradient></defs><path d="M9 48 28 13q4-7 9 0l18 35H43L33 28 22 48Z" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 42q16 8 39-4" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="aerBorder" x1="28" y1="28" x2="484" y2="484" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff3b78" />
+      <stop offset="48%" stop-color="#b83dff" stop-opacity="0.72" />
+      <stop offset="100%" stop-color="#3e8cff" />
+    </linearGradient>
+    <radialGradient id="aerGlowPink" cx="18%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#ff2d68" stop-opacity="0.46" />
+      <stop offset="50%" stop-color="#b83dff" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#07070d" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="aerGlowBlue" cx="84%" cy="84%" r="58%">
+      <stop offset="0%" stop-color="#3e8cff" stop-opacity="0.44" />
+      <stop offset="50%" stop-color="#635bff" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#07070d" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="aerPeakGrad" x1="100" y1="354" x2="345" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff2d68" />
+      <stop offset="55%" stop-color="#ec3485" />
+      <stop offset="100%" stop-color="#6c4dff" />
+    </linearGradient>
+    <linearGradient id="aerArchGrad" x1="88" y1="382" x2="376" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9c27b0" />
+      <stop offset="48%" stop-color="#635bff" />
+      <stop offset="100%" stop-color="#2979ff" />
+    </linearGradient>
+    <linearGradient id="aerCrestGrad" x1="168" y1="306" x2="438" y2="306" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="46%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+
+  <!-- Minimalist Obsidian Squircle -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#07070d" />
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#aerGlowPink)" />
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#aerGlowBlue)" />
+  <rect x="19" y="19" width="474" height="474" rx="109" stroke="url(#aerBorder)" stroke-width="5" />
+
+  <!-- Minimalist 'A' Peak Stroke -->
+  <path
+    d="M104 344 C156 266 204 176 238 134 C253 116 277 116 294 138 L352 215 C330 212 308 214 287 221 C272 200 264 190 258 190 C252 190 216 248 158 326 C141 338 122 343 104 344 Z"
+    fill="url(#aerPeakGrad)"
+  />
+
+  <!-- Flowing Aerodynamic Wave Cross-Arch -->
+  <path
+    d="M84 374 C160 374 206 328 248 286 C284 250 322 252 350 294 C364 316 376 348 386 382 L332 382 C320 344 307 316 286 302 C246 334 198 386 124 384 C109 384 95 380 84 374 Z"
+    fill="url(#aerArchGrad)"
+  />
+
+  <!-- Upper Electric Blue Wave Crest -->
+  <path
+    d="M164 312 C226 232 308 206 374 240 C404 256 424 278 438 302 C410 280 376 264 334 263 C276 261 220 286 164 312 Z"
+    fill="url(#aerCrestGrad)"
+  />
+</svg>

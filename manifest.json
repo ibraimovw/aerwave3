@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "AER.wave — Beyond the forecast",
+  "short_name": "AER.wave",
+  "description": "AER.wave — адаптивный погодный сервис с прогнозом на 16 дней, качеством воздуха и интерактивной картой.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#050507",
+  "background_color": "#050507",
+  "icons": [
+    {
+      "src": "./assets/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
