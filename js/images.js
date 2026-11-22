@@ -1,0 +1,5 @@
+export async function setCityImage(city){
+ const target=document.getElementById("heroImage");if(!target)return;
+ const cacheKey="aerwave-image-"+city.toLowerCase();const cached=sessionStorage.getItem(cacheKey);if(cached){target.style.backgroundImage=`linear-gradient(90deg,rgba(7,9,16,.3),rgba(7,9,16,.1)),url("${cached}")`;return;}
+ try{const q=encodeURIComponent(city+" city skyline panorama");const url=`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${q}&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url&iiurlwidth=1600&format=json&origin=*`;const r=await fetch(url);const j=await r.json();const pages=Object.values(j.query?.pages||{});const image=pages.find(p=>p.imageinfo?.[0]?.thumburl);if(!image)throw new Error("No image");const src=image.imageinfo[0].thumburl;const test=new Image();test.onload=()=>{sessionStorage.setItem(cacheKey,src);target.style.backgroundImage=`linear-gradient(90deg,rgba(7,9,16,.3),rgba(7,9,16,.1)),url("${src}")`;};test.src=src;}catch{target.style.backgroundImage="linear-gradient(120deg,#222d48,#44304d 55%,#18243d)";}
+}
